@@ -39,7 +39,7 @@ _LINK = {
 def get_parser(**parser_kwargs):
     parser = argparse.ArgumentParser(**parser_kwargs)
     parser.add_argument("-i", "--in_path", type=str, default="", help="Input path.")
-    parser.add_argument("-o", "--out_path", type=str, default="./results", help="Output path.")
+    parser.add_argument("-o", "--out_path", type=str, default="", help="Output path.")
     parser.add_argument("--mask_path", type=str, default="", help="Mask path for inpainting.")
     parser.add_argument("--scale", type=int, default=4, help="Scale factor for SR.")
     parser.add_argument("--seed", type=int, default=12345, help="Random seed.")
